@@ -1,6 +1,6 @@
-const messagesRef = firebase.database.ref();
+const messagesRef = firebase.database().ref();
 
-messageRef.push({
+messagesRef.push({
     message: "This was made with Javascript",
     passcode: "JavaScript"
 });
